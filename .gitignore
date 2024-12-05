@@ -1,0 +1,13 @@
+# Competitive Programming Helper
+.cph
+.cphcsrun
+
+# Binaries
+bin
+obj
+
+# Sources
+/*.cs
+/*.cs.*
+ProblemCodes/**
+Disabled/**

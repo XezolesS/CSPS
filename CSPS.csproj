@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>CSPS</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Snippets\**" />
+    <EmbeddedResource Remove="Snippets\**" />
+    <None Remove="Snippets\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="ProblemCodes\**" />
+    <EmbeddedResource Remove="ProblemCodes\**" />
+    <None Remove="ProblemCodes\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Disabled\**" />
+    <EmbeddedResource Remove="Disabled\**" />
+    <None Remove="Disabled\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove=".cphcsrun\**" />
+    <EmbeddedResource Remove=".cphcsrun\**" />
+    <None Remove=".cphcsrun\**" />
+  </ItemGroup>
+</Project>

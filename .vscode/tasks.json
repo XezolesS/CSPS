@@ -1,0 +1,67 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "CSPS: Build",
+			"type": "shell",
+			"command": "dotnet",
+			"args": [
+				"build",
+				"${workspaceFolder}/CSPS.csproj",
+				"/consoleloggerparameters:NoSummary",
+				"/p:Configuration=Release",
+				"/p:Platform=\"AnyCPU\""
+			],
+			"group": "build",
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "shared",
+				"showReuseMessage": true,
+				"clear": false
+			}
+		},
+		{
+			"label": "CSPS: Run with dotnet",
+			"type": "shell",
+			"command": "dotnet",
+			"args": [
+				"run",
+				"${workspaceFolder}/CSPS.csproj",
+				"/consoleloggerparameters:NoSummary",
+				"/p:Configuration=Release",
+				"/p:Platform=\"AnyCPU\""
+			],
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "shared",
+				"showReuseMessage": true,
+				"clear": false
+			}
+		},
+		{
+			"label": "CSPS: Run Binary",
+			"type": "process",
+			"command": "${workspaceFolder}/bin/Release/net6.0/CSPS",
+			"windows": {
+				"command": "${workspaceFolder}/bin/Release/net6.0/CSPS.exe"
+			},
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "shared",
+				"showReuseMessage": true,
+				"clear": false
+			}
+		},
+		{
+			"label": "CSPS: Build and Run",
+			"dependsOrder": "sequence",
+			"dependsOn": ["CSPS: Build", "CSPS: Run Binary"]
+		}
+	]
+}
