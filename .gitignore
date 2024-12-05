@@ -9,5 +9,7 @@ obj
 # Sources
 /*.cs
 /*.cs.*
-ProblemCodes/**
 Disabled/**
+!Disabled/.ABOUT.md
+ProblemCodes/**
+!ProblemCodes/.ABOUT.md

@@ -25,6 +25,12 @@ Since .NET cannot compile or run single *.cs file <span style='font-size:11px'>(
 ### Basics
 ### Compiling and Running
 ### Disabling Sources
+Put source files(`*.cs`) under `./Disabled`.  
+The files under `./Disabled` will not be recognized by the project(`CSPS.csproj`).
+
+### Archiving Sources
+Put source files(`*.cs`) under `./ProblemCodes`.  
+The files under `./ProblemCodes` will not be recognized by the project(`CSPS.csproj`).
 
 ## Requirements
 - [.NET 6.0 SDK](https://dotnet.microsoft.com/ko-kr/download/dotnet/6.0)
