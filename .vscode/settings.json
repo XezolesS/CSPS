@@ -1,11 +1,10 @@
 {
-    "cph.general.defaultLanguage": "csharp",
-    "cph.general.defaultLanguageTemplateFileLocation": "D:\\Code Workspace\\CSPS\\Snippets\\DefaultTemplate.cs",
     "files.exclude": {
         "*.sln": true,
         ".cphcsrun": true,
         "bin": true,
         "obj": true
     },
+    "cph.general.defaultLanguage": "csharp",
     "cph.general.timeOut": 5000
 }
