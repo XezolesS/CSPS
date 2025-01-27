@@ -11,7 +11,7 @@ static partial class BinarySearchExtension
 
     private static int SearchUpperBoundImpl<T>(IList<T> list, int index, int count, T value, IComparer<T> comparer)
     {
-        int lo = index, hi = index + count;
+        int lo = index, hi = index + count - 1;
         while (lo < hi)
         {
             int mid = (lo + hi) / 2;
